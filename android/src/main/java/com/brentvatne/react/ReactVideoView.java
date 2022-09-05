@@ -712,6 +712,8 @@ public class ReactVideoView extends ScalableVideoView implements
         mMediaPlayerValid = false;
         super.onDetachedFromWindow();
         setKeepScreenOn(false);
+        mMediaPlayer.release();
+        mMediaPlayer=null;
     }
 
     @Override
