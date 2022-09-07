@@ -11,7 +11,7 @@ public class DefaultReactExoplayerConfig implements ReactExoplayerConfig {
     private final DefaultBandwidthMeter bandwidthMeter;
 
     public DefaultReactExoplayerConfig(Context context) {
-        this.bandwidthMeter = new DefaultBandwidthMeter.Builder(context).build();
+        this.bandwidthMeter = new DefaultBandwidthMeter();
     }
 
     @Override
